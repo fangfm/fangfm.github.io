@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta name="keywords" content="voice conversion, non-parallel, cycleGAN, deep learning, Generative Adversarial Network, GAN">
+    <title>Demonstration</title>
+  </head>
+
+  <body>
+    
+    <div><center>
+	<p>HIGH-QUALITY NONPARALLEL VOICE CONVERSION BASED ON CYCLE-CONSISTENT ADVERSARIAL NETWORK</p>
+	<p>Fuming Fang<sup>1</sup>, Junichi Yamagishi<sup>1,2</sup>, Isao Echizen<sup>1</sup>, Jaime Lorenzo-Trueba<sup>1</sup></p>
+	<p><sup>1</sup>National Institute of Informatics, Japan</p>
+	<p><sup>2</sup>University of Edinburgh, UK</p>
+
+	<table border="1" cellpadding="20" cellspacing="0">
+	  
+	  <tr bgcolor="#cccccc">
+	    <th></th>
+	    <th>Male</th>
+	    <th>Female</th>
+	  </tr>
+
+	  <tr>
+            <th rowspan="2">Natural</th>
+            <th><audio src="./audios/icassp2018/groudtruth_male_I02.wav" controls preload></audio></th>
+            <th><audio src="./audios/icassp2018/groudtruth_female_I02.wav" controls preload></audio></th>
+          </tr>
+	  <tr>
+            <th><audio src="./audios/icassp2018/groudtruth_male_I04.wav" controls preload></audio></th>
+            <th><audio src="./audios/icassp2018/groudtruth_female_I04.wav" controls preload></audio></th>
+          </tr>
+
+	  <tr bgcolor="#cccccc">
+	    <th></th>
+            <th>Female -> Male</th>
+            <th>Male -> Female</th>
+          </tr>
+
+	  <tr>
+            <th rowspan="2">Merlin<br>(Parallel, baseline)</th>
+            <th><audio src="./audios/icassp2018/merlin_para_female2male_I02.wav" controls preload></audio></th>
+            <th><audio src="./audios/icassp2018/merlin_para_male2female_I02.wav" controls preload></audio></th>
+          </tr>
+	  <tr>
+	    <th><audio src="./audios/icassp2018/merlin_para_female2male_I04.wav" controls preload></audio></th>
+	    <th><audio src="./audios/icassp2018/merlin_para_male2female_I04.wav" controls preload></audio></th>
+	  </tr>
+	  
+	  <tr>
+	    <th rowspan="2">GAN<br>(Parallel, baseline)</th>
+	    <th><audio src="./audios/icassp2018/GAN_para_female2male_I02.wav" controls preload></audio></th>
+	    <th><audio src="./audios/icassp2018/GAN_para_male2female_I02.wav" controls preload></audio></th>
+	  </tr>
+	  <tr>
+	    <th><audio src="./audios/icassp2018/GAN_para_female2male_I04.wav" controls preload></audio></th>
+	    <th><audio src="./audios/icassp2018/GAN_para_male2female_I04.wav" controls preload></audio></th>
+	  </tr>
+	  
+	  <tr>
+	    <th rowspan="2">CycleGAN<br>(Nonparallel, proposed)</th>
+	    <th><audio src="./audios/icassp2018/cycleGAN_nonpara_female2male_I02.wav" controls preload></audio></th>
+	    <th><audio src="./audios/icassp2018/cycleGAN_nonpara_male2female_I02.wav" controls preload></audio></th>
+	  </tr>
+	  <tr>
+	    <th><audio src="./audios/icassp2018/cycleGAN_nonpara_female2male_I04.wav" controls preload></audio></th>
+	    <th><audio src="./audios/icassp2018/cycleGAN_nonpara_male2female_I04.wav" controls preload></audio></th>
+	  </tr>
+	  
+	</table>
+      </div></center>
+  </body>
+</html>
