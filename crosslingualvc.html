@@ -9,15 +9,73 @@
   <body>
     
     <div><center>
+	<p>Natural speech</p>
 	<table border="1" cellpadding="20" cellspacing="0">
 	  
 	  <tr bgcolor="#cccccc">
-	    <th></th>
-	    <th>Source</th>
-	    <th>Target</th>
+	    <th>No.</th>
+	    <th>Source speaker</th>
+	    <th>Target speaker</th>
 	  </tr>
 
+	  <tr>
+	    <th>1</th>
+            <th><audio src="./audios/crosslingualvc/src_001.wav" controls preload></audio></th>
+            <th><audio src="./audios/crosslingualvc/tgt_001.wav" controls preload></audio></th>
+	  </tr>
+
+	  <tr>
+            <th>2</th>
+            <th><audio src="./audios/crosslingualvc/src_003.wav" controls preload></audio></th>
+            <th><audio src="./audios/crosslingualvc/tgt_003.wav" controls preload></audio></th>
+          </tr>
+
 	</table>
+
+	<p>Converted speech</p>
+        <table border="1" cellpadding="20" cellspacing="0">
+
+          <tr bgcolor="#cccccc">
+            <th>Cross-lingual VC condition</th>
+	    <th>No.</th>
+            <th>Samples</th>
+          </tr>
+
+	  <tr>
+            <th rowspan="2">JPN2ENG</th>
+	    <th>1</th>
+            <th><audio src="./audios/crosslingualvc/VC1_001.wav" controls preload></th>
+          </tr>
+
+	  <tr>
+            <th>2</th>
+            <th><audio src="./audios/crosslingualvc/VC1_003.wav" controls preload></th>
+          </tr>
+
+	  <tr>
+            <th rowspan="2">ENG2ENG</th>
+            <th>1</th>
+            <th><audio src="./audios/crosslingualvc/VC2_001.wav" controls preload></th>
+          </tr>
+
+          <tr>
+            <th>2</th>
+            <th><audio src="./audios/crosslingualvc/VC2_003.wav" controls preload></th>
+          </tr>
+
+	  <tr>
+            <th rowspan="2">JPNENG2ENG</th>
+            <th>1</th>
+            <th><audio src="./audios/crosslingualvc/VC3_001.wav" controls preload></th>
+          </tr>
+
+          <tr>
+            <th>2</th>
+            <th><audio src="./audios/crosslingualvc/VC3_003.wav" controls preload></th>
+          </tr>
+
+	</table>
+
       </div></center>
   </body>
 </html>
